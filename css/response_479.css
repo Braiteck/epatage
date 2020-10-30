@@ -1,0 +1,435 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .top_banner .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+
+    .top_banner2 .telegram
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .top_banner2 .telegram .icon
+    {
+        width: 34px;
+        height: 34px;
+        padding: 8px;
+    }
+
+
+
+    .mob_header
+    {
+        padding: 12px 0;
+    }
+
+
+    .mob_header .mob_menu_btn
+    {
+        width: 40px;
+        height: 31px;
+        margin-right: 2px;
+    }
+
+    .mob_header .mob_menu_btn span:before
+    {
+        top: -5px;
+    }
+
+    .mob_header .mob_menu_btn span:after
+    {
+        top: 5px;
+    }
+
+
+    .mob_header .logo a,
+    .mob_header .logo img
+    {
+        height: 41px;
+    }
+
+
+    .mob_header .order_btn
+    {
+        font-size: 12px;
+
+        padding: 10px 14px;
+    }
+
+
+    .mob_header .phone_link
+    {
+        width: 36px;
+        height: 36px;
+        margin-left: 10px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .sub_title
+    {
+        font-size: 15px;
+
+        margin-top: 7px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .line
+    {
+        margin-bottom: 15px;
+    }
+
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .bottom .submit
+    {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head
+    {
+        padding-top: 40px;
+    }
+
+    .service_head .title
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+
+    /*-------------------
+        We do for you
+    -------------------*/
+    .we_do_for_you:before
+    {
+        top: -130px;
+
+        width: 280px;
+        height: 280px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .tabs
+    {
+        margin-bottom: 35px;
+    }
+
+    .services .tabs button
+    {
+        font-size: 14px;
+    }
+
+    .services .tabs button .thumb
+    {
+        width: 75px;
+        height: 75px;
+    }
+
+    .services .tabs button + button
+    {
+        margin-left: 20px;
+    }
+
+
+
+    .services .service .links > * + *
+    {
+        margin-left: 15px;
+    }
+
+
+
+    /*-----------------
+        Specialists
+    -----------------*/
+    .specialists
+    {
+        padding: 50px 0;
+    }
+
+
+
+    /*---------------
+        Portfolio
+    ---------------*/
+    .portfolio .block_head:before
+    {
+        top: -40px;
+
+        width: 124px;
+        height: 124px;
+    }
+
+
+
+    /*----------------
+        Our salons
+    ----------------*/
+    .our_salons
+    {
+        padding: 50px 0;
+    }
+
+
+
+    /*----------------
+        Order form
+    ----------------*/
+    .order_form .data .form .line,
+    .order_form .data .form .submit
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------
+        Choose salon
+    ------------------*/
+    .choose_salon .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .choose_salon .data .block_title
+    {
+        font-size: 17px;
+    }
+
+
+    .choose_salon .data .item .title
+    {
+        font-size: 15px;
+
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        padding: 10px 20px;
+    }
+
+    .choose_salon .data .item .desc
+    {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .choose_salon .data .list > *
+    {
+        margin-left: 0;
+    }
+
+
+    .choose_salon .data .list .duration
+    {
+        width: calc(100% - 207px);
+    }
+
+    .choose_salon .data .list .order_btn
+    {
+        width: 127px;
+        padding: 8px 20px;
+    }
+
+
+
+    /*-------------------
+        Service_promo
+    -------------------*/
+    .service_promo .img
+    {
+        max-width: 100%;
+        padding-bottom: 125%;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks
+    {
+        padding: 50px 0 0;
+    }
+
+
+    .stocks .stock
+    {
+        min-height: 120px;
+        padding: 20px 10px 15px 125px;
+    }
+
+    .stocks .stock .name
+    {
+        font-size: 19px;
+    }
+
+    .stocks .stock .duration
+    {
+        font-size: 11px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        padding: 50px 0 10px;
+    }
+
+
+    .reviews .review
+    {
+        padding: 20px;
+    }
+
+    .reviews .review .photo
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        margin-bottom: 10px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .logo img
+    {
+        width: 100px;
+    }
+
+
+    footer .data
+    {
+        width: calc(100% - 130px);
+    }
+
+
+    footer .time
+    {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+
+    footer .menu
+    {
+        width: calc(100% + 15px);
+        margin-left: -15px;
+    }
+
+    footer .menu > *,
+    footer .menu > * + *
+    {
+        margin-left: 15px;
+    }
+
+    footer .menu a
+    {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+
+    footer .bottom
+    {
+        margin-top: 0;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html .fancybox-close-small
+    {
+        top: -12px;
+        right: -12px;
+    }
+
+
+    .modal
+    {
+        width: 320px;
+        padding: 35px;
+    }
+
+
+    .modal .form .line
+    {
+        margin-bottom: 15px;
+    }
+}

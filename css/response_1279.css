@@ -1,0 +1,807 @@
+@media (max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 28px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .top_banner
+    {
+        padding: 5px 0;
+    }
+
+    .top_banner .bonus
+    {
+        font-size: 15px;
+        line-height: 19px;
+
+        width: calc(50% - 125px);
+    }
+
+    .top_banner .title
+    {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .top_banner .desc
+    {
+        width: calc(50% - 125px);
+    }
+
+
+    .top_banner:before
+    {
+        top: -15.85px;
+        left: -7.19px;
+
+        width: 31.69px;
+        height: 31.69px;
+    }
+
+    .top_banner:after
+    {
+        top: auto;
+        right: 22px;
+        bottom: -5px;
+
+        width: 26px;
+        height: 26px;
+    }
+
+    .top_banner .cont.row:before
+    {
+        top: auto;
+        bottom: -20px;
+        left: 17px;
+
+        width: 31px;
+        height: 31px;
+    }
+
+    .top_banner .cont.row:after
+    {
+        top: -4px;
+        right: -7px;
+
+        width: 23px;
+        height: 23px;
+    }
+
+
+
+    .top_banner2 .telegram
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .top_banner2 .telegram .icon
+    {
+        width: 55px;
+        height: 55px;
+        padding: 13px;
+    }
+
+    .top_banner2:before
+    {
+        display: none;
+    }
+
+    .top_banner2:after
+    {
+        top: -4px;
+        right: -8px;
+
+        width: 23px;
+        height: 23px;
+    }
+
+    .top_banner2 .cont.row:before
+    {
+        top: -15.85px;
+        left: -7.19px;
+
+        width: 31.69px;
+        height: 31.69px;
+    }
+
+    .top_banner2 .cont.row:after
+    {
+        top: auto;
+        right: 16px;
+        bottom: -15px;
+
+        width: 29.5px;
+        height: 29.5px;
+    }
+
+
+
+    .mob_header
+    {
+        display: block;
+    }
+
+
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+
+        width: 310px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #2d2c31;
+    }
+
+    header.show
+    {
+        transform: translateX(0);
+    }
+
+
+    header .mob_scroll
+    {
+        display: flex;
+        overflow: auto;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 20px 0;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    header .mob_scroll > *
+    {
+        width: 100%;
+    }
+
+
+
+    header .info
+    {
+        padding: 0;
+    }
+
+    header .logo,
+    header .info > .cont > .row
+    {
+        display: none;
+    }
+
+
+    header .menu
+    {
+        display: block !important;
+    }
+
+    header .info > .cont > .row + .row
+    {
+        margin-top: 0;
+    }
+
+
+    header .info .col
+    {
+        width: 100%;
+
+        border: none;
+    }
+
+    header .menu .item
+    {
+        width: 100%;
+
+        border-bottom: 1px solid #c4b0a9;
+    }
+
+    header .menu .item > a
+    {
+        color: #fff;
+        font-family: var(--font_family);
+        font-size: 16px;
+        font-weight: 800;
+        font-style: normal;
+        line-height: 140%;
+
+        padding: 15px 6px;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+    .block_head .title
+    {
+        line-height: 34px;
+    }
+
+    .block_head .sub_title
+    {
+        font-size: 17px;
+
+        margin-top: 12px;
+    }
+
+    .block_head .desc
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .input,
+    .form .nice-select .current
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .service_head .title
+    {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+
+    .service_head .pluses
+    {
+        width: 415px;
+        margin-top: 45px;
+        margin-left: -20px;
+        padding: 40px;
+    }
+
+
+    .service_head .order_btn
+    {
+        right: 70px;
+    }
+
+
+    .service_head .img
+    {
+        width: 80%;
+        height: auto;
+        padding-bottom: 55%;
+    }
+
+
+
+    /*-------------------
+        We do for you
+    -------------------*/
+    .we_do_for_you
+    {
+        margin-bottom: 80px;
+    }
+
+    .we_do_for_you:before
+    {
+        right: -20px;
+
+        width: 500px;
+        height: 500px;
+        margin-right: 0;
+    }
+
+
+    .we_do_for_you .block_head
+    {
+        margin-left: 30px;
+    }
+
+
+    .we_do_for_you .img
+    {
+        margin-right: -20px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services
+    {
+        padding-bottom: 40px;
+    }
+
+    .services:before
+    {
+        bottom: -157px;
+
+        width: 197px;
+        height: 197px;
+    }
+
+
+    .services .tabs:before,
+    .services .tabs:after
+    {
+        width: 220px;
+    }
+
+    .services .tabs button
+    {
+        font-size: 17px;
+    }
+
+    .services .tabs button .thumb
+    {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 25px;
+    }
+
+    .services .tabs button.active .thumb
+    {
+        transform: scale(1.25);
+    }
+
+    .services .tabs button + button
+    {
+        margin-left: 60px;
+    }
+
+
+
+    .services .row
+    {
+        margin-bottom: -30px;
+    }
+
+    .services .row > *
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .services .service .info
+    {
+        padding: 20px 5px 5px;
+    }
+
+    .services .service .name
+    {
+        font-size: 17px;
+    }
+
+    .services .service .desc
+    {
+        margin-top: 20px;
+    }
+
+    .services .service .links > *
+    {
+        padding: 11px 26px;
+    }
+
+    .services .service .links > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+
+    /*-----------------
+        Specialists
+    -----------------*/
+    .specialists
+    {
+        padding: 100px 0 20px;
+    }
+
+    .specialists .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .specialists .specialist
+    {
+        padding: 15px 15px 25px;
+    }
+
+    .specialists .specialist .order_btn
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*---------------
+        Portfolio
+    ---------------*/
+    .portfolio .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+
+    /*----------------
+        Our salons
+    ----------------*/
+    .our_salons
+    {
+        padding: 65px 0 70px;
+    }
+
+
+    .our_salons .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .our_salons .img
+    {
+        display: none;
+    }
+
+
+    .our_salons #map
+    {
+        width: calc(100% - 290px);
+    }
+
+
+    .our_salons .list
+    {
+        width: 290px;
+    }
+
+    .our_salons .list .item
+    {
+        padding: 15px;
+    }
+
+
+
+    /*----------------
+        Order form
+    ----------------*/
+    .order_form
+    {
+        margin-bottom: 60px;
+    }
+
+    .order_form .data
+    {
+        padding: 40px;
+    }
+
+    .order_form .data .title
+    {
+        line-height: 32px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .order_form .data .form .line
+    {
+        width: calc((100% - 232px) / 4);
+    }
+
+    .order_form .data .form .submit
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*--------------
+        Interior
+    --------------*/
+    .interior
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .interior .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .interior .item .info
+    {
+        line-height: 160%;
+
+        padding: 20px 20px 0;
+    }
+
+
+
+    /*------------------
+        Choose salon
+    ------------------*/
+    .choose_salon
+    {
+        position: relative;
+        z-index: 1;
+
+        padding: 40px 0 100px;
+    }
+
+
+    .choose_salon .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .choose_salon .tabs
+    {
+        font-size: 0;
+
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-bottom: 30px;
+        margin-left: -20px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        border-radius: 0;
+
+        scrollbar-color: transparent transparent;
+        scrollbar-width: 0;
+    }
+
+    .choose_salon .tabs::-webkit-scrollbar
+    {
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+    .choose_salon .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+    .choose_salon .tabs button
+    {
+        display: inline-block;
+
+        margin-bottom: 0;
+        margin-left: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .choose_salon .tabs button + button
+    {
+        margin-left: 20px;
+    }
+
+
+
+    /*-------------------
+        Service_promo
+    -------------------*/
+    .service_promo
+    {
+        padding: 80px 0;
+    }
+
+
+    .service_promo .block_head
+    {
+        margin-left: 0;
+    }
+
+    .service_promo .img
+    {
+        margin: -120px 0 -120px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks
+    {
+        padding: 100px 0 0;
+    }
+
+
+    .stocks .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .stocks .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .stocks .stock
+    {
+        min-height: 160px;
+        padding: 30px 20px 20px 210px;
+    }
+
+    .stocks .stock .name
+    {
+        font-size: 25px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        padding: 100px 0 50px;
+    }
+
+
+    .reviews .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .reviews .review
+    {
+        padding: 20px 20px 20px 90px;
+    }
+
+    .reviews .review .photo
+    {
+        top: 20px;
+        left: 20px;
+    }
+
+    .reviews .review .text_block
+    {
+        margin-top: 15px;
+    }
+
+
+    .reviews .more
+    {
+        margin-top: 49px;
+    }
+
+
+
+    /*----------
+        More
+    ----------*/
+    .more
+    {
+        margin-top: 35px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 50px 0;
+    }
+
+    footer .info
+    {
+        padding: 0;
+    }
+
+
+    footer .menu
+    {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+
+    footer .salons
+    {
+        display: none;
+    }
+
+
+
+    footer .bottom
+    {
+        margin-top: -15px;
+        padding: 0;
+    }
+
+
+    footer .copyright
+    {
+        margin-left: 198px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal_title
+    {
+        line-height: 34px;
+
+        margin-bottom: 25px;
+    }
+}

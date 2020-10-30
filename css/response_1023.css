@@ -1,0 +1,577 @@
+@media (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 26px;
+    }
+
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .top_banner .cont.row
+    {
+        justify-content: center;
+    }
+
+    .top_banner .desc
+    {
+        display: none;
+    }
+
+    .top_banner .bonus
+    {
+        width: auto;
+        margin-right: 40px;
+    }
+
+    .top_banner .bonus br
+    {
+        display: none;
+    }
+
+
+
+    .top_banner2 .title
+    {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .top_banner2 .telegram
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .top_banner2 .telegram .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+    .mob_header .location,
+    .mob_header .time
+    {
+        display: none;
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 35px;
+    }
+
+    .block_head .title
+    {
+        line-height: 30px;
+    }
+
+    .block_head .title > *
+    {
+        padding: 0 40px;
+    }
+
+    .block_head .sub_title
+    {
+        font-size: 16px;
+
+        margin-top: 10px;
+    }
+
+    .block_head .desc
+    {
+        margin-top: 25px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head
+    {
+        padding: 50px 0;
+
+        background: #2d2c31;
+    }
+
+    .service_head .info
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+    }
+
+
+    .service_head .title
+    {
+        color: #fff;
+        font-size: 38px;
+        line-height: 46px;
+
+        padding-bottom: 30px;
+
+        border-bottom: 1px solid #c4b0a9;
+    }
+
+    .service_head .pluses
+    {
+        font-size: 15px;
+
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 0;
+        padding: 0;
+
+        background: none;
+    }
+
+
+    .service_head .order_btn
+    {
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        margin: 35px 0 0;
+    }
+
+
+    .service_head .img
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        We do for you
+    -------------------*/
+    .we_do_for_you:before
+    {
+        width: 400px;
+        height: 400px;
+    }
+
+
+    .we_do_for_you .block_head
+    {
+        width: calc(100% - 300px);
+        margin-left: 0;
+    }
+
+    .we_do_for_you .block_head:before
+    {
+        right: 41px;
+        bottom: -60px;
+
+        width: 169px;
+        height: 169px;
+    }
+
+
+    .we_do_for_you .img
+    {
+        width: 280px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services
+    {
+        padding-bottom: 40px;
+    }
+
+    .services:before
+    {
+        bottom: -117px;
+
+        width: 147px;
+        height: 147px;
+    }
+
+    .services:after
+    {
+        right: -40px;
+        bottom: -67px;
+
+        width: 117px;
+        height: 117px;
+        margin-right: 0;
+    }
+
+
+    .services .tabs
+    {
+        top: -20px;
+
+        margin-bottom: 20px;
+    }
+
+    .services .tabs:before,
+    .services .tabs:after
+    {
+        width: 120px;
+    }
+
+    .services .tabs button
+    {
+        font-size: 16px;
+    }
+
+    .services .tabs button .thumb
+    {
+        width: 85px;
+        height: 85px;
+        margin: 0 auto 20px;
+    }
+
+    .services .tabs button.active .thumb
+    {
+        transform: scale(1.2);
+    }
+
+    .services .tabs button + button
+    {
+        margin-left: 40px;
+    }
+
+
+
+    .services .row > *
+    {
+        width: 50%;
+    }
+
+
+    .services .service .name
+    {
+        font-size: 16px;
+    }
+
+    .services .service .links
+    {
+        opacity: 1;
+    }
+
+
+
+    /*-----------------
+        Specialists
+    -----------------*/
+    .specialists
+    {
+        padding: 80px 0 40px;
+    }
+
+    .specialists .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .specialists .specialist
+    {
+        padding: 15px 15px 20px;
+    }
+
+    .specialists .specialist .order_btn
+    {
+        opacity: 1;
+    }
+
+
+
+    /*---------------
+        Portfolio
+    ---------------*/
+    .portfolio
+    {
+        padding: 60px 0;
+    }
+
+    .portfolio .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*----------------
+        Our salons
+    ----------------*/
+    .our_salons
+    {
+        padding: 60px 0;
+    }
+
+
+
+    /*----------------
+        Order form
+    ----------------*/
+    .order_form .data
+    {
+        padding: 30px;
+    }
+
+
+    .order_form .data .form .line,
+    .order_form .data .form .submit
+    {
+        width: calc((100% - 50px) / 3);
+    }
+
+
+
+    /*--------------
+        Interior
+    --------------*/
+    .interior .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .interior .item .info
+    {
+        padding: 15px 5px 0;
+    }
+
+
+
+    /*------------------
+        Choose salon
+    ------------------*/
+    .choose_salon
+    {
+        padding: 20px 0 80px;
+    }
+
+
+    .choose_salon .data
+    {
+        padding: 35px;
+    }
+
+    .choose_salon .data .block_title
+    {
+        font-size: 20px;
+
+        margin-bottom: 25px;
+    }
+
+    .choose_salon .data .item + .item
+    {
+        margin-top: 40px;
+    }
+
+    .choose_salon .data .item .title
+    {
+        font-size: 17px;
+
+        width: calc(100% + 35px);
+        margin-right: -35px;
+        padding: 12px 35px 12px 40px;
+    }
+
+    .choose_salon .data .item .desc
+    {
+        max-width: calc(100% - 40px);
+        margin-left: 40px;
+    }
+
+
+    .choose_salon .data .list > *
+    {
+        margin-right: 0;
+        margin-left: 40px;
+    }
+
+
+
+    /*-------------------
+        Service_promo
+    -------------------*/
+    .service_promo
+    {
+        padding: 60px 0;
+    }
+
+    .service_promo:before
+    {
+        top: -90px;
+        left: 50px;
+
+        width: 120px;
+        height: 120px;
+    }
+
+    .service_promo:after
+    {
+        left: 200px;
+
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .service_promo .img
+    {
+        height: 480px;
+        margin: -80px 0 -80px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks
+    {
+        padding: 80px 0 0;
+    }
+
+
+    .stocks .row > *
+    {
+        width: calc(100% - 20px);
+    }
+
+
+    .stocks .stock
+    {
+        padding: 30px 30px 20px 260px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews
+    {
+        padding: 80px 0 30px;
+    }
+
+
+    .reviews .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .reviews .more
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 45px 0;
+    }
+
+
+    footer .data
+    {
+        width: calc(100% - 160px);
+    }
+
+
+    footer .menu > * + *
+    {
+        margin-left: 23px;
+    }
+
+
+    footer .copyright
+    {
+        margin-left: 160px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .fancybox-slide--html
+    {
+        padding: 30px;
+    }
+
+    .fancybox-slide--html .fancybox-close-small
+    {
+        right: -50px;
+    }
+
+
+    .modal
+    {
+        width: 500px;
+    }
+
+    .modal_title
+    {
+        line-height: 30px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .form .columns
+    {
+        --form_columns_offset: 30px;
+    }
+
+    .modal .form .line
+    {
+        margin-bottom: 25px;
+    }
+}

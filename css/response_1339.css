@@ -1,0 +1,95 @@
+@media (max-width: 1339px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .top_banner:before
+    {
+        left: 0;
+    }
+
+
+    .top_banner2 .cont.row:before
+    {
+        left: -10px;
+    }
+
+    .top_banner2 .cont.row:after
+    {
+        right: 80px;
+    }
+
+
+    header .info .col
+    {
+        width: calc(50% - 100px);
+    }
+
+
+
+    /*-------------
+        Sidebar
+    -------------*/
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*----------------
+        Our salons
+    ----------------*/
+    .our_salons .img
+    {
+        left: -20px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
+    .stocks .stock
+    {
+        padding: 40px 30px 20px 295px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}
