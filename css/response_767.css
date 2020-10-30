@@ -89,6 +89,10 @@
     /*----------------
         Typography
     ----------------*/
+    .text_block blockquote
+    {
+        padding: 15px 20px;
+    }
 
 
 
@@ -486,6 +490,68 @@
         height: auto;
         margin: 0 auto;
         padding-bottom: 100%;
+    }
+
+
+
+    /*-----------------
+        Information
+    -----------------*/
+    .information
+    {
+        padding: 70px 0 0;
+    }
+
+
+    .information .tabs
+    {
+        margin-bottom: 0;
+    }
+
+    .information .tabs button
+    {
+        min-height: 50px;
+    }
+
+
+    .information .tab_content
+    {
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
+    .information .tab_content.active
+    {
+        padding: 35px 20px;
+    }
+
+
+
+    .information .steps
+    {
+        margin-top: 30px;
+    }
+
+    .information .steps .step
+    {
+        min-height: 36px;
+        padding-left: 50px;
+    }
+
+    .information .steps .step:before
+    {
+        font-size: 16px;
+        line-height: 36px;
+
+        width: 36px;
+        height: 36px;
+    }
+
+    .information .steps .step .name
+    {
+        font-size: 16px;
     }
 
 

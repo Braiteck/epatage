@@ -936,7 +936,7 @@ header .addresses
     position: static;
 }
 
-header .addresses .btn
+/* header .addresses .btn
 {
     color: #000;
     font-size: 12px;
@@ -1051,6 +1051,128 @@ header .addresses .more
     margin-top: 54px;
 
     text-align: right;
+} */
+
+
+header .addresses select
+{
+    display: none;
+}
+
+header .addresses .nice-select
+{
+    position: relative;
+
+    display: block;
+}
+
+header .addresses .nice-select .current
+{
+    color: #2d2c31;
+    font-size: 11px;
+    line-height: 140%;
+
+    position: relative;
+
+    display: flex;
+    overflow: hidden;
+
+    height: 42px;
+    padding: 0 39px 0 19px;
+
+    cursor: pointer;
+    transition: .2s linear;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    border: 1px solid #7c6b6a;
+    border-radius: 22px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+header .addresses .nice-select .current:after
+{
+    position: absolute;
+    top: -3px;
+    right: 19px;
+    bottom: 0;
+
+    display: block;
+
+    width: 7px;
+    height: 7px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(-45deg);
+
+    border-bottom: 1px solid #998178;
+    border-left: 1px solid #998178;
+}
+
+header .addresses .nice-select .list
+{
+    position: absolute;
+    z-index: 9;
+    top: calc(100% + 30px);
+    left: 0;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    min-width: 100%;
+    padding: 8px 0;
+
+    transition: .2s linear;
+
+    opacity: 0;
+    border: 1px solid #7c6b6a;
+    border-radius: 22px;
+    background: #fff;
+}
+
+header .addresses .nice-select.open .list
+{
+    top: calc(100% + 1px);
+
+    visibility: visible;
+
+    opacity: 1;
+}
+
+header .addresses .nice-select .list .scrollbar
+{
+    overflow: auto;
+
+    max-height: 240px;
+}
+
+header .addresses .nice-select .list .list_item
+{
+    color: #2d2c31;
+    font-size: 11px;
+    line-height: 140%;
+
+    padding: 7px 19px;
+
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+header .addresses .nice-select .list .list_item:empty
+{
+    display: none;
+}
+
+header .addresses .nice-select .list .list_item:hover
+{
+    color: #fff;
+
+    background: #ed8171;
 }
 
 
@@ -1060,6 +1182,13 @@ header .time
 {
     color: #7c6b6a;
     line-height: 16px;
+}
+
+
+header .time
+{
+    margin-right: auto;
+    margin-left: 37px;
 }
 
 
@@ -1780,11 +1909,37 @@ header .menu .item > a.active
 }
 
 
+.text_block blockquote
+{
+    font-weight: 800;
+
+    display: block;
+
+    padding: 20px 30px;
+
+    background: #f6f0ec;
+}
+
+
 .text_block .hide
 {
     display: none;
 
     margin-bottom: 0;
+}
+
+
+.text_block img
+{
+    display: block;
+
+    max-width: 100%;
+}
+
+.text_block img.center
+{
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -3523,12 +3678,168 @@ header .menu .item > a.active
 
 
 
+/*-----------------
+    Information
+-----------------*/
+.information
+{
+    padding: 156px 0 0;
+}
+
+
+.information .tabs
+{
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    overflow: hidden;
+
+    width: 1066px;
+    max-width: 100%;
+    margin: 0 auto 50px;
+
+    border-radius: 45px;
+    background: #2d2c31;
+
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.information .tabs button
+{
+    color: #fff;
+    font-weight: 800;
+    line-height: 140%;
+
+    position: relative;
+
+    display: block;
+
+    min-height: 61px;
+    padding: 10px 30px;
+
+    transition: background .2s linear;
+    text-align: left;
+
+    border-radius: 45px;
+}
+
+.information .tabs button .name
+{
+    font-weight: 800;
+}
+
+.information .tabs button:hover,
+.information .tabs button.active
+{
+    background: #ed8171;
+}
+
+
+.information .tab_content
+{
+    position: relative;
+    z-index: 2;
+
+    width: 884px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    background: #f8f8f8;
+}
+
+.information .tab_content.active
+{
+    padding: 40px 115px 54px;
+}
+
+.information .tab_content .title
+{
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 140%;
+
+    margin-bottom: 22px;
+
+    text-align: center;
+}
+
+
+.information .steps
+{
+    margin-top: 43px;
+
+    counter-reset: step;
+}
+
+.information .steps .step
+{
+    line-height: 140%;
+
+    position: relative;
+
+    display: flex;
+
+    min-height: 44px;
+    padding-left: 70px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.information .steps .step + .step
+{
+    margin-top: 20px;
+}
+
+.information .steps .step:before
+{
+    color: #000;
+    font-family: var(--font_family2);
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 44px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 44px;
+    height: 44px;
+
+    content: counters(step, '.') '.';
+    counter-increment: step;
+    text-align: center;
+
+    border-radius: 50%;
+    background: #c4b0a9;
+}
+
+.information .steps .step > * + *
+{
+    margin-top: 4px;
+}
+
+.information .steps .step .name
+{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+
 /*------------
     Stocks
 ------------*/
 .stocks
 {
-    padding: 133px 0 0;
+    padding: 79px 0 0;
 }
 
 

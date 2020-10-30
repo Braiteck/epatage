@@ -668,15 +668,25 @@
 
 
 
-    /*------------
-        Stocks
-    ------------*/
-    .stocks
+    /*-----------------
+        Information
+    -----------------*/
+    .information
     {
-        padding: 100px 0 0;
+        padding-top: 120px;
     }
 
 
+    .information .tabs
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
     .stocks .row
     {
         margin-bottom: -20px;

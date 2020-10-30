@@ -466,15 +466,77 @@
 
 
 
-    /*------------
-        Stocks
-    ------------*/
-    .stocks
+    /*-----------------
+        Information
+    -----------------*/
+    .information
     {
-        padding: 80px 0 0;
+        padding-top: 90px;
     }
 
 
+    .information .tabs
+    {
+        font-size: 0;
+
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-bottom: 30px;
+        margin-left: -20px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        border-radius: 0;
+
+        scrollbar-color: transparent transparent;
+        scrollbar-width: 0;
+    }
+
+    .information .tabs::-webkit-scrollbar
+    {
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+    .information .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+    .information .tabs button
+    {
+        display: inline-block;
+
+        margin-bottom: 0;
+        margin-left: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .information .tabs button + button
+    {
+        margin-left: 20px;
+    }
+
+
+    .information .tab_content.active
+    {
+        padding: 35px 60px 40px;
+    }
+
+
+
+    /*------------
+        Stocks
+    ------------*/
     .stocks .row > *
     {
         width: calc(100% - 20px);
