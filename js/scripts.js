@@ -155,4 +155,22 @@ $(() => {
 			$parent.find('.hide').slideDown(500)
 		}
 	})
+
+
+	// Цены на услуги
+	$('.prices_info .choose_btn, .prices_info .add_btn, .prices_info .mob_add_btn').click(function (e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active')
+	})
+
+
+	// Фильтр
+	$('.filter .name').click(function (e) {
+		e.preventDefault()
+
+		$(this).hasClass('active')
+			? $(this).removeClass('active').next().slideUp(300)
+			: $(this).addClass('active').next().slideDown(300)
+	})
 })

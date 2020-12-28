@@ -112,6 +112,10 @@
     /*------------------
         Form elements
     ------------------*/
+    .form .columns > *.width1of4
+    {
+        width: calc(50% - var(--form_columns_offset));
+    }
 
 
 
@@ -568,6 +572,282 @@
     .reviews .more
     {
         margin-top: 30px;
+    }
+
+
+
+    /*-----------------
+        Prices info
+    -----------------*/
+    .prices_info .page_title
+    {
+        font-size: 40px;
+        line-height: 46px;
+
+        margin-bottom: 35px;
+    }
+
+
+    .prices_info .data_row .col_main
+    {
+        width: 100%;
+    }
+
+    .prices_info .data_row .col_right
+    {
+        display: none;
+    }
+
+
+    .prices_info .col_main .data
+    {
+        padding: 35px;
+    }
+
+
+    .prices_info .col_main .data .block_title
+    {
+        font-size: 20px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .prices_info .col_main .data .filter_btn
+    {
+        display: flex;
+    }
+
+
+    .prices_info .col_main .data .item + .item
+    {
+        margin-top: 40px;
+    }
+
+    .prices_info .col_main .data .item .title
+    {
+        font-size: 17px;
+
+        width: calc(100% + 35px);
+        margin-right: -35px;
+        padding: 12px 35px 12px 40px;
+    }
+
+    .prices_info .col_main .data .item .desc
+    {
+        max-width: calc(100% - 40px);
+        margin-left: 40px;
+    }
+
+
+    .prices_info .col_main .data .list > *
+    {
+        margin-right: 0;
+        margin-left: 40px;
+    }
+
+    .prices_info .col_main .data .list .name
+    {
+        font-size: 15px;
+        line-height: 125%;
+    }
+
+
+
+    #filter_modal
+    {
+        visibility: visible !important;
+
+        width: 526px;
+        max-width: 100%;
+        padding: 32px 47px 44px 44px;
+
+        background: #fff;
+    }
+
+    #filter_modal .mob_title
+    {
+        color: #ed8171;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 22px;
+
+        display: block;
+
+        margin-bottom: 15px;
+
+        text-transform: uppercase;
+    }
+
+    #filter_modal .item + .item
+    {
+        margin-top: 23px;
+    }
+
+
+    #filter_modal .name
+    {
+        color: #7c6b6a;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 140%;
+
+        position: relative;
+
+        padding-right: 44px;
+
+        cursor: pointer;
+    }
+
+    #filter_modal .name .icon
+    {
+        position: absolute;
+        top: 3px;
+        right: 0;
+
+        display: block;
+
+        width: 20px;
+        height: 20px;
+    }
+
+    #filter_modal .name .icon:after,
+    #filter_modal .name .icon:before
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        width: 20px;
+        height: 2px;
+        margin: auto;
+
+        content: '';
+
+        border-radius: 2px;
+        background: #2d2c31;
+    }
+
+    #filter_modal .name .icon:after
+    {
+        width: 2px;
+        height: 20px;
+
+        transition: opacity .2s linear;
+    }
+
+    #filter_modal .name.active .icon:after
+    {
+        opacity: 0;
+    }
+
+
+    #filter_modal .data
+    {
+        display: none;
+
+        padding-top: 9px;
+        padding-bottom: 15px;
+    }
+
+
+    #filter_modal .field + .field
+    {
+        margin-top: 9px;
+    }
+
+
+    #filter_modal input[type=checkbox]
+    {
+        display: none;
+    }
+
+    #filter_modal label
+    {
+        color: #2d2c31;
+        font-size: 14px;
+        line-height: 140%;
+
+        position: relative;
+
+        display: flex;
+
+        min-height: 25px;
+        padding-left: 38px;
+
+        cursor: pointer;
+        transition: .2s linear;
+
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    #filter_modal label:before
+    {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        width: 25px;
+        height: 25px;
+        margin: auto;
+
+        content: '';
+        transition: .2s linear;
+
+        border: 1px solid #c4b0a9;
+        border-radius: 50%;
+    }
+
+    #filter_modal label:after
+    {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 7px;
+
+        display: block;
+
+        width: 11px;
+        height: 7px;
+        margin: auto;
+
+        content: '';
+        transition: opacity .2s linear;
+
+        opacity: 0;
+        background: url(../images/ic_check.svg) 50% no-repeat;
+    }
+
+    #filter_modal input[type=checkbox]:checked + label
+    {
+        font-weight: bold;
+    }
+
+    #filter_modal input[type=checkbox]:checked + label:before
+    {
+        border-color: #ed8171;
+        background: #ed8171;
+    }
+
+    #filter_modal input[type=checkbox]:checked + label:after
+    {
+        opacity: 1;
+    }
+
+
+    .mob_total_info
+    {
+        display: block;
     }
 
 

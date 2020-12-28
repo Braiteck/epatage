@@ -588,6 +588,155 @@
 
 
 
+    /*-----------------
+        Prices info
+    -----------------*/
+    .prices_info .page_title
+    {
+        font-size: 38px;
+        line-height: 42px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .prices_info .service_filter .title
+    {
+        font-size: 20px;
+        line-height: 125%;
+
+        margin-bottom: 15px;
+    }
+
+    .prices_info .service_filter .form .columns
+    {
+        --form_columns_offset: 20px;
+    }
+
+
+    .prices_info .col_main .data
+    {
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 30px 20px;
+    }
+
+    .prices_info .col_main .data .block_title
+    {
+        font-size: 18px;
+
+        margin-bottom: 20px;
+
+        text-align: left;
+    }
+
+
+    .prices_info .col_main .data .item .title
+    {
+        font-size: 16px;
+
+        width: calc(100% + 20px);
+        margin-right: -20px;
+        padding: 10px 20px 10px 25px;
+    }
+
+    .prices_info .col_main .data .item .desc
+    {
+        max-width: calc(100% - 25px);
+        margin-bottom: 20px;
+        margin-left: 25px;
+    }
+
+
+    .prices_info .col_main .data .list > *
+    {
+        margin-left: 25px;
+    }
+
+    .prices_info .col_main .data .list > * + *
+    {
+        margin-top: 25px;
+    }
+
+
+    .prices_info .col_main .data .list .name
+    {
+        font-size: 16px;
+
+        width: calc(100% - 94px);
+    }
+
+    .prices_info .col_main .data .list .duration
+    {
+        width: calc(100% - 140px);
+        margin-top: 10px;
+        margin-left: 0;
+
+        order: 2;
+    }
+
+    .prices_info .col_main .data .list .duration > *:after
+    {
+        display: none;
+    }
+
+    .prices_info .col_main .data .list .price
+    {
+        margin-left: 0;
+    }
+
+    .prices_info .col_main .data .list .choose_btn
+    {
+        margin-top: 10px;
+
+        order: 3;
+    }
+
+    .prices_info .col_main .data .sub_list .add_btn
+    {
+        display: none;
+    }
+
+    .prices_info .col_main .data .sub_list .mob_add_btn
+    {
+        display: block;
+    }
+
+
+    .prices_info .col_main .data .sub_list
+    {
+        margin-top: 20px;
+        padding-left: 0;
+
+        order: 5;
+    }
+
+    .prices_info .col_main .data .sub_list .name
+    {
+        font-size: 15px;
+
+        width: calc(100% - 109px);
+    }
+
+
+
+    .prices_info .col_main .data .filter_btn
+    {
+        top: 21px;
+        right: 20px;
+    }
+
+
+    #filter_modal
+    {
+        width: 340px;
+        padding: 30px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

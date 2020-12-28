@@ -753,6 +753,148 @@
 
 
 
+    /*-----------------
+        Prices info
+    -----------------*/
+    .prices_info .page_title
+    {
+        font-size: 44px;
+        line-height: 52px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .prices_info .tabs
+    {
+        font-size: 0;
+
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-bottom: 30px;
+        margin-left: -20px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        border-radius: 0;
+
+        scrollbar-color: transparent transparent;
+        scrollbar-width: 0;
+    }
+
+    .prices_info .tabs::-webkit-scrollbar
+    {
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+    .prices_info .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+    .prices_info .tabs button
+    {
+        display: inline-block;
+
+        margin-bottom: 0;
+        margin-left: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .prices_info .tabs button + button
+    {
+        margin-left: 20px;
+    }
+
+
+
+    .prices_info .service_filter .form .columns
+    {
+        --form_columns_offset: 25px;
+    }
+
+
+    .prices_info .data_row .col_main
+    {
+        width: calc(100% - 300px);
+    }
+
+    .prices_info .data_row .col_right
+    {
+        width: 280px;
+    }
+
+
+    .prices_info .col_main .data
+    {
+        padding: 40px 50px;
+    }
+
+    .prices_info .col_main .data .list > *
+    {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+    .prices_info .filter
+    {
+        padding: 20px;
+    }
+
+    .prices_info .filter .name
+    {
+        font-size: 20px;
+    }
+
+    .prices_info .filter .name .icon
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+    .prices_info .filter .name .icon:before
+    {
+        width: 20px;
+    }
+
+    .prices_info .filter .name .icon:after
+    {
+        height: 20px;
+    }
+
+
+    .prices_info .total_info
+    {
+        padding: 20px;
+    }
+
+    .prices_info .total_info .total_price .price b
+    {
+        font-size: 30px;
+    }
+
+    .prices_info .total_info .order_btn
+    {
+        margin-top: 20px;
+    }
+
+    .prices_info .total_info .exp
+    {
+        margin-top: 25px;
+    }
+
+
+
     /*----------
         More
     ----------*/

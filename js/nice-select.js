@@ -75,6 +75,10 @@
         $dropdown.find('.current').html($selected.data('display') || $selected.text());
       }
 
+      if($selected.val() != 0) {
+      	$dropdown.find('.current').addClass('selected');
+      }
+
       $options.each(function(i) {
         var $option = $(this);
         var display = $option.data('display');
