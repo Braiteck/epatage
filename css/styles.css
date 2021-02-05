@@ -1429,7 +1429,7 @@ header .menu .item > a.active
     position: relative;
     z-index: 20;
 
-    margin-bottom: 18px;
+    margin-bottom: 25px;
 }
 
 .page_head .cont > * + *
@@ -1467,6 +1467,21 @@ header .menu .item > a.active
     margin: 0 6px;
 
     vertical-align: top;
+}
+
+
+.page_head .page_title
+{
+    color: #2d2c31;
+    font-family: var(--font_family3);
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 67px;
+
+    display: block;
+
+    text-align: center;
 }
 
 
@@ -1930,6 +1945,29 @@ header .menu .item > a.active
 .text_block .hide > *
 {
     margin-bottom: 20px;
+}
+
+
+.text_block h2
+{
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 140%;
+
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+}
+
+
+.text_block * + h2
+{
+    margin-top: 35px;
+}
+
+.text_block h2 + *
+{
+    margin-top: 0 !important;
 }
 
 
@@ -2613,6 +2651,11 @@ header .menu .item > a.active
     padding: 133px 0 14px;
 }
 
+.specialists.no_pad
+{
+    padding-top: 14px;
+}
+
 
 .specialists .block_head
 {
@@ -2718,6 +2761,18 @@ header .menu .item > a.active
     height: 100%;
 
     object-fit: cover;
+}
+
+
+.specialists .specialist .photo.circle
+{
+    width: 200px;
+    max-width: 100%;
+    height: 200px;
+    margin-bottom: 19px;
+    padding: 0;
+
+    border-radius: 50%;
 }
 
 
@@ -2922,6 +2977,11 @@ header .menu .item > a.active
     padding: 67px 0 72px;
 }
 
+.our_salons.tabs_container
+{
+    padding-bottom: 98px;
+}
+
 
 .our_salons .block_head
 {
@@ -2934,6 +2994,91 @@ header .menu .item > a.active
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
+}
+
+
+.our_salons .head
+{
+    margin-bottom: 32px;
+
+    text-align: center;
+}
+
+.our_salons .head .location
+{
+    color: #2d2c31;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 140%;
+}
+
+.our_salons .head .desc
+{
+    color: #998178;
+    font-family: var(--font_family2);
+    font-size: 18px;
+    font-style: italic;
+    line-height: 140%;
+
+    width: 475px;
+    max-width: 100%;
+    margin: 56px auto 0;
+}
+
+
+.our_salons .tabs
+{
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    overflow: hidden;
+
+    margin-top: 46px;
+    margin-bottom: 29px;
+
+    border-radius: 45px;
+    background: #2d2c31;
+
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.our_salons .tab_content
+{
+    position: relative;
+    z-index: 2;
+}
+
+.our_salons .tabs button
+{
+    color: #fff;
+    line-height: 140%;
+
+    position: relative;
+
+    display: block;
+
+    min-height: 61px;
+    padding: 10px 30px;
+
+    transition: background .2s linear;
+    text-align: left;
+
+    border-radius: 45px;
+}
+
+.our_salons .tabs button .name
+{
+    font-weight: 800;
+}
+
+.our_salons .tabs button:hover,
+.our_salons .tabs button.active
+{
+    background: #ed8171;
 }
 
 
@@ -2996,6 +3141,48 @@ header .menu .item > a.active
 {
             filter: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale');
     -webkit-filter: grayscale(100%);
+}
+
+
+.our_salons .data
+{
+    position: relative;
+    z-index: 3;
+
+    width: 1138px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.our_salons .data:before
+{
+    position: absolute;
+    z-index: -1;
+    top: -125px;
+    right: -85px;
+
+    display: block;
+
+    width: 150px;
+    height: 150px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: #ececec;
+}
+
+.our_salons .data .img
+{
+    top: -108px;
+    left: 0;
+}
+
+.our_salons .data #map
+{
+    width: 998px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 
@@ -5389,6 +5576,62 @@ header .menu .item > a.active
     line-height: 140%;
 
     margin-top: 41px;
+}
+
+
+
+/*----------------
+    About info
+----------------*/
+.about_info
+{
+    margin-bottom: 51px;
+}
+
+.about_info .text_block
+{
+    position: relative;
+    z-index: 3;
+
+    width: 884px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.about_info .text_block:before
+{
+    position: absolute;
+    z-index: -1;
+    top: -120px;
+    left: -4px;
+
+    display: block;
+
+    width: 144px;
+    height: 144px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: #f8f8f8;
+}
+
+.about_info .text_block:after
+{
+    position: absolute;
+    z-index: -1;
+    top: -130px;
+    left: calc(100% + 55px);
+
+    display: block;
+
+    width: 265px;
+    height: 265px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: #f6f0ec;
 }
 
 

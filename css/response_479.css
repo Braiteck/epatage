@@ -98,11 +98,42 @@
         display: none;
     }
 
+    .page_head.no_hide
+    {
+        display: block;
+
+        margin-bottom: 20px;
+    }
+
+
+    .page_head .cont > * + *
+    {
+        margin-top: 15px;
+    }
+
+
+    .page_head .page_title
+    {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
 
 
     /*----------------
         Block head
     ----------------*/
+    .block_head .title > *
+    {
+        padding: 0;
+    }
+
+    .block_head .title > *:before,
+    .block_head .title > *:after
+    {
+        display: none;
+    }
+
     .block_head .sub_title
     {
         font-size: 15px;
@@ -223,6 +254,13 @@
     }
 
 
+    .specialists .specialist .photo.circle
+    {
+        width: 200px;
+        height: 200px;
+    }
+
+
 
     /*---------------
         Portfolio
@@ -243,6 +281,24 @@
     .our_salons
     {
         padding: 50px 0;
+    }
+
+    .our_salons.tabs_container
+    {
+        padding-bottom: 50px;
+    }
+
+
+    .our_salons .head .location
+    {
+        font-size: 19px;
+        line-height: 125%;
+    }
+
+
+    .our_salons .data:before
+    {
+        display: none;
     }
 
 

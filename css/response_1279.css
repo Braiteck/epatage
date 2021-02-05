@@ -242,6 +242,11 @@
     /*---------------
         Page head
     ---------------*/
+    .page_head .page_title
+    {
+        font-size: 44px;
+        line-height: 52px;
+    }
 
 
 
@@ -489,10 +494,67 @@
         padding: 65px 0 70px;
     }
 
+    .our_salons.tabs_container
+    {
+        padding-bottom: 70px;
+    }
+
 
     .our_salons .block_head
     {
         margin-bottom: 30px;
+    }
+
+
+    .our_salons .tabs
+    {
+        font-size: 0;
+
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin-top: 40px;
+        margin-right: -20px;
+        margin-bottom: 25px;
+        margin-left: -20px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+
+        border-radius: 0;
+
+        scrollbar-color: transparent transparent;
+        scrollbar-width: 0;
+    }
+
+    .our_salons .tabs::-webkit-scrollbar
+    {
+        width: 0;
+        height: 0;
+
+        background-color: transparent;
+    }
+
+    .our_salons .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent;
+    }
+
+    .our_salons .tabs button
+    {
+        display: inline-block;
+
+        margin-bottom: 0;
+        margin-left: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .our_salons .tabs button + button
+    {
+        margin-left: 20px;
     }
 
 
@@ -505,6 +567,20 @@
     .our_salons #map
     {
         width: calc(100% - 290px);
+    }
+
+
+    .our_salons .head .location
+    {
+        font-size: 21px;
+    }
+
+    .our_salons .head .desc
+    {
+        font-size: 17px;
+
+        width: 400px;
+        margin: 40px auto 0;
     }
 
 
@@ -891,6 +967,16 @@
     .prices_info .total_info .exp
     {
         margin-top: 25px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        margin-bottom: 10px;
     }
 
 

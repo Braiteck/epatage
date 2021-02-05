@@ -62,6 +62,11 @@
     /*---------------
         Page head
     ---------------*/
+    .page_head .page_title
+    {
+        font-size: 38px;
+        line-height: 42px;
+    }
 
 
 
@@ -248,6 +253,13 @@
         padding: 10px 10px 15px;
     }
 
+    .specialists .specialist .photo.circle
+    {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 15px;
+    }
+
 
 
     /*---------------
@@ -290,6 +302,12 @@
     }
 
 
+    .our_salons .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+
     .our_salons .list
     {
         width: 100%;
@@ -304,6 +322,20 @@
         height: 360px;
 
         order: 3;
+    }
+
+
+    .our_salons .head
+    {
+        margin-bottom: 25px;
+    }
+
+    .our_salons .head .desc
+    {
+        font-size: 15px;
+
+        width: 320px;
+        margin: 20px auto 0;
     }
 
 
@@ -733,6 +765,16 @@
     {
         width: 340px;
         padding: 30px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        margin-bottom: 0;
     }
 
 

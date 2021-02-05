@@ -74,6 +74,11 @@
     /*---------------
         Page head
     ---------------*/
+    .page_head .page_title
+    {
+        font-size: 40px;
+        line-height: 46px;
+    }
 
 
 
@@ -349,6 +354,32 @@
     .our_salons
     {
         padding: 60px 0;
+    }
+
+    .our_salons.tabs_container
+    {
+        padding-bottom: 60px;
+    }
+
+
+    .our_salons .tabs
+    {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+
+    .our_salons .head .location
+    {
+        font-size: 20px;
+    }
+
+    .our_salons .head .desc
+    {
+        font-size: 16px;
+
+        width: 360px;
+        margin: 30px auto 0;
     }
 
 
