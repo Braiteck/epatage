@@ -173,4 +173,22 @@ $(() => {
 			? $(this).removeClass('active').next().slideUp(300)
 			: $(this).addClass('active').next().slideDown(300)
 	})
+
+
+	// Залипание элемента
+	$('.sticky').stick_in_parent()
+
+
+	// Отправка форм
+	$('body').on('submit', '#density_hair_modal .form', function (e) {
+		e.preventDefault()
+
+		$.fancybox.close()
+
+		$.fancybox.open({
+			src: '#order_modal',
+			type: 'inline',
+			touch: false
+		})
+	})
 })

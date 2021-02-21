@@ -4820,11 +4820,14 @@ header .menu .item > a.active
 {
     width: 322px;
     max-width: 100%;
+}
 
+.prices_info .data_row .col_right .sticky
+{
     border: 1px solid #c4b0a9;
 }
 
-.prices_info .data_row .col_right > * + *
+.prices_info .data_row .col_right .sticky > * + *
 {
     border-top: 1px solid #c4b0a9;
 }
@@ -6013,6 +6016,128 @@ footer .copyright
     color: #fff;
 
     background: #ed8171;
+}
+
+
+
+#density_hair_modal
+{
+    width: 720px;
+    padding: 33px 30px 38px;
+}
+
+#density_hair_modal .modal_title
+{
+    margin-bottom: 18px;
+}
+
+#density_hair_modal .title
+{
+    font-size: 18px;
+    line-height: 140%;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+#density_hair_modal .form .row
+{
+    margin-bottom: -30px;
+    margin-left: -30px;
+
+    align-items: stretch;
+    align-content: stretch;
+}
+
+#density_hair_modal .form .row > *
+{
+    width: calc(33.333% - 30px);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+#density_hair_modal .form input[type=radio]
+{
+    display: none;
+}
+
+#density_hair_modal .form label
+{
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 140%;
+
+    display: block;
+
+    padding: 24px 24px 29px;
+
+    cursor: pointer;
+    transition: border-color .2s linear;
+    text-align: center;
+
+    border: 1px solid #c4c4c4;
+}
+
+#density_hair_modal .form label .icon
+{
+    display: flex;
+
+    height: 90px;
+    margin-bottom: 27px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#density_hair_modal .form label .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#density_hair_modal .form label .check
+{
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 auto 13px;
+
+    transition: .2s linear;
+
+    border: 1px solid #c4b0a9;
+    border-radius: 50%;
+    background: #fff;
+    background-position: calc(50% + 1px) calc(50% + 1px);
+}
+
+#density_hair_modal .form input[type=radio]:checked + label,
+#density_hair_modal .form label:hover
+{
+    border-color: #ed8171;
+}
+
+#density_hair_modal .form label:hover .check
+{
+    border-color: #ed8171;
+}
+
+#density_hair_modal .form input[type=radio]:checked + label .check
+{
+    border-color: #ed8171;
+    background: #ed8171 url(../images/ic_check.svg) calc(50% + 1px) calc(50% + 1px) no-repeat;
+}
+
+#density_hair_modal .form .submit
+{
+    padding-top: 30px;
+
+    justify-content: center;
 }
 
 

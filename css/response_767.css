@@ -832,4 +832,28 @@
     {
         padding: 20px;
     }
+
+
+
+    #density_hair_modal
+    {
+        width: 320px;
+        padding: 25px 25px 30px;
+    }
+
+    #density_hair_modal .title
+    {
+        font-size: 15px;
+    }
+
+    #density_hair_modal .form .row > *
+    {
+        width: calc(100% - 15px);
+    }
+
+    #density_hair_modal .form label .check,
+    #density_hair_modal .form input[type=radio]:checked + label .check
+    {
+        background-position: 50% 50%;
+    }
 }

@@ -10,6 +10,14 @@
 
 
 
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+
 
     /*------------
         Header
@@ -938,7 +946,7 @@
     }
 
 
-    .form .columns
+    .modal .form .columns
     {
         --form_columns_offset: 30px;
     }
@@ -946,5 +954,55 @@
     .modal .form .line
     {
         margin-bottom: 25px;
+    }
+
+
+
+    #density_hair_modal
+    {
+        width: 640px;
+        padding: 30px 30px 35px;
+    }
+
+    #density_hair_modal .title
+    {
+        font-size: 16px;
+        line-height: 125%;
+    }
+
+    #density_hair_modal .form .row
+    {
+        margin-bottom: -15px;
+        margin-left: -15px;
+    }
+
+    #density_hair_modal .form .row > *
+    {
+        width: calc(33.333% - 15px);
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+
+    #density_hair_modal .form label
+    {
+        font-size: 17px;
+        line-height: 125%;
+
+        padding: 20px 20px 25px;
+    }
+
+    #density_hair_modal .form label .icon
+    {
+        margin-bottom: 20px;
+    }
+
+    #density_hair_modal .form label .check
+    {
+        margin-bottom: 10px;
+    }
+
+    #density_hair_modal .form .submit
+    {
+        padding-top: 20px;
     }
 }
